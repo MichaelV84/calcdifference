@@ -1,44 +1,82 @@
-var select =  document.querySelector('select')
-var button =  document.querySelector('button')
+// var select =  document.querySelector('select')
+// var button =  document.querySelector('button')
 
+const select1 = document.querySelector('.select-1');
 
-
-select.addEventListener('click',function(){
-
-    var value = document.querySelector('select').value
-    if (value == "41.36"){
-                a = 41.36
-                b = 50.50
+select1.addEventListener('change',function(){
+    if (this.value == "41.36"){
+    a = 41.36
+    b = 50.50
     }
-    if (value == "38.50"){
+    if (this.value == "38.50"){
         a = 38.50
         b = 49
     }
-    if (value == "37.80"){
+    if (this.value == "37.80"){
         a = 37.80
         b = 47.50
     }
-    if (value == "38.52"){
+    if (this.value == "38.52"){
         a = 38.52
         b = 46.22
     }
-    if (value == "35.99"){
+    if (this.value == "35.99"){
         a = 35.99
         b = 43.19
     }
-    if (value == "35.26"){
+    if (this.value == "35.26"){
         a = 35.26
         b = 42.31
     }
-    if (value == "0"){
+    if (this.value == "0"){
         a = 0
         b = 0
     }
 
     document.getElementById('past_per_hour_div').textContent = a
     document.getElementById('new_per_our_div').textContent = b
-    console.log(value)
+ 
+
 })
+
+// select.addEventListener('click',function(){
+
+//     var value = document.querySelector('select').value
+
+   
+//     if (value == "41.36"){
+//         a = 41.36
+//         b = 50.50
+//     }
+//     if (value == "38.50"){
+//         a = 38.50
+//         b = 49
+//     }
+//     if (value == "37.80"){
+//         a = 37.80
+//         b = 47.50
+//     }
+//     if (value == "38.52"){
+//         a = 38.52
+//         b = 46.22
+//     }
+//     if (value == "35.99"){
+//         a = 35.99
+//         b = 43.19
+//     }
+//     if (value == "35.26"){
+//         a = 35.26
+//         b = 42.31
+//     }
+//     if (value == "0"){
+//         a = 0
+//         b = 0
+//     }
+
+//     document.getElementById('past_per_hour_div').textContent = a
+//     document.getElementById('new_per_our_div').textContent = b
+//     console.log(value)
+// })
 
 
 
