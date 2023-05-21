@@ -1,5 +1,4 @@
-// var select =  document.querySelector('select')
-// var button =  document.querySelector('button')
+
 
 const select1 = document.querySelector('.select-1');
 
@@ -35,86 +34,9 @@ select1.addEventListener('change',function(){
 
     document.getElementById('past_per_hour_div').textContent = a
     document.getElementById('new_per_our_div').textContent = b
- 
+    
 
 })
-
-// select.addEventListener('click',function(){
-
-//     var value = document.querySelector('select').value
-
-   
-//     if (value == "41.36"){
-//         a = 41.36
-//         b = 50.50
-//     }
-//     if (value == "38.50"){
-//         a = 38.50
-//         b = 49
-//     }
-//     if (value == "37.80"){
-//         a = 37.80
-//         b = 47.50
-//     }
-//     if (value == "38.52"){
-//         a = 38.52
-//         b = 46.22
-//     }
-//     if (value == "35.99"){
-//         a = 35.99
-//         b = 43.19
-//     }
-//     if (value == "35.26"){
-//         a = 35.26
-//         b = 42.31
-//     }
-//     if (value == "0"){
-//         a = 0
-//         b = 0
-//     }
-
-//     document.getElementById('past_per_hour_div').textContent = a
-//     document.getElementById('new_per_our_div').textContent = b
-//     console.log(value)
-// })
-
-
-
-// button.addEventListener('click',function(){
-  
-//     if (select.value == "41.36"){
-//         a = 41.36
-//         b = 50.50
-//     }
-//     if (select.value == "38.50"){
-//         a = 38.50
-//         b = 49
-//     }
-//     if (select.value == "37.80"){
-//         a = 37.80
-//         b = 47.50
-//     }
-//     if (select.value == "38.52"){
-//         a = 38.52
-//         b = 46.22
-//     }
-//     if (select.value == "35.99"){
-//         a = 35.99
-//         b = 43.19
-//     }
-//     if (select.value == "35.26"){
-//         a = 35.26
-//         b = 42.31
-//     }
-//     if (select.value == "0"){
-//         a = 0
-//         b = 0
-//     }
-//     // console.log(b)
-//     document.getElementById('past_per_hour_div').textContent = a
-//     // console.log(a)
-//     document.getElementById('new_per_our_div').textContent = b
-// })
 
 function myFunction(){
     var last_per_hour_may = 0 
