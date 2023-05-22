@@ -1,11 +1,14 @@
 
 
 const select1 = document.querySelector('.select-1');
-
+document.getElementById('past_per_hour_div').textContent = 41.36
+document.getElementById('new_per_our_div').textContent = 50.50
+var a = 41.36
+var b = 50.50
 select1.addEventListener('change',function(){
     if (this.value == "41.36"){
-    a = 41.36
-    b = 50.50
+        a = 41.36
+        b = 50.50
     }
     if (this.value == "38.50"){
         a = 38.50
@@ -27,7 +30,7 @@ select1.addEventListener('change',function(){
         a = 35.26
         b = 42.31
     }
-    if (this.value == "0"){
+    if (this.value == ""){
         a = 0
         b = 0
     }
