@@ -37,7 +37,7 @@ select1.addEventListener('change',function(){
 
     document.getElementById('past_per_hour_div').textContent = a
     document.getElementById('new_per_our_div').textContent = b
-    
+    myFunction()
 
 })
 
