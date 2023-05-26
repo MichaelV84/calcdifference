@@ -179,8 +179,8 @@ function myFunction(){
     var jen_shabat = Number(document.getElementById("jen_shabat").value)
 
 
-    last_per_hour_jen = (a/100*20*jen_20)+(a/100*50*jen_50)+(a/100*200*jen_200)+(a/100*150*jen_150_2)+(a/100*150*jen_150_1)+(a/100*125*jen_125)+(a*jen_100)+(a*jen_mahala)+(a*feb_hofesh)+(a*feb_shabat)
-    new_per_hour_jen =  (b/100*20*jen_20)+(b/100*50*jen_50)+(b/100*200*jen_200)+(b/100*150*jen_150_2)+(b/100*150*jen_150_1)+(b/100*125*jen_125)+(b*jen_100)+(b*jen_mahala)+(b*feb_hofesh)+(b*feb_shabat)
+    last_per_hour_jen = (a/100*20*jen_20)+(a/100*50*jen_50)+(a/100*200*jen_200)+(a/100*150*jen_150_2)+(a/100*150*jen_150_1)+(a/100*125*jen_125)+(a*jen_100)+(a*jen_mahala)+(a*jen_hofesh)+(a*jen_shabat)
+    new_per_hour_jen =  (b/100*20*jen_20)+(b/100*50*jen_50)+(b/100*200*jen_200)+(b/100*150*jen_150_2)+(b/100*150*jen_150_1)+(b/100*125*jen_125)+(b*jen_100)+(b*jen_mahala)+(b*jen_hofesh)+(b*jen_shabat)
 
     last_per_hour_jen = Math.round(parseFloat(last_per_hour_jen)*100)/100  
     new_per_hour_jen = Math.round(parseFloat(new_per_hour_jen)*100)/100  
