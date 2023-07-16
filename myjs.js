@@ -42,6 +42,123 @@ select1.addEventListener('change',function(){
 })
 
 function myFunction(){
+
+    var last_per_hour_september = 0
+    var new_per_hour_september = 0
+
+    var september_50 = Number(document.getElementById("september_50").value)
+    var september_20 = Number(document.getElementById("september_20").value)
+    var september_200 = Number(document.getElementById("september_200").value)
+    var september_150_2 = Number(document.getElementById("september_150_2").value)
+    var september_150_1 = Number(document.getElementById("september_150_1").value)
+    var september_125 = Number(document.getElementById("september_125").value)
+    var september_100 = Number(document.getElementById("september_100").value)
+    var september_mahala = Number(document.getElementById("september_mahala").value)
+    var september_hofesh = Number(document.getElementById("september_hofesh").value)
+    var september_shabat = Number(document.getElementById("september_shabat").value)
+
+
+    last_per_hour_september = (a/100*20*september_20)+(a/100*50*september_50)+(a/100*200*september_200)+(a/100*150*september_150_2)+(a/100*150*september_150_1)+(a/100*125*september_125)+(a*september_100)+(a*september_mahala)+(a*september_hofesh)+(a*september_shabat)
+    new_per_hour_september =  (b/100*20*september_20)+(b/100*50*september_50)+(b/100*200*september_200)+(b/100*150*september_150_2)+(b/100*150*september_150_1)+(b/100*125*september_125)+(b*september_100)+(b*september_mahala)+(b*september_hofesh)+(b*september_shabat)
+
+    last_per_hour_september = Math.round(parseFloat(last_per_hour_september)*100)/100  
+    new_per_hour_september = Math.round(parseFloat(new_per_hour_september)*100)/100  
+
+    var hoser_september =  new_per_hour_september - last_per_hour_september
+    hoser_september = Math.round(parseFloat(hoser_september)*100)/100 
+
+
+    document.getElementById('last_price_september').innerText = last_per_hour_september
+    document.getElementById('new_price_september').innerText = new_per_hour_september
+    document.getElementById('hoser_september').innerText = hoser_september
+
+    var last_per_hour_august = 0 
+    var new_per_hour_august = 0 
+
+    var august_50 = Number(document.getElementById("august_50").value)
+    var august_20 = Number(document.getElementById("august_20").value)
+    var august_200 = Number(document.getElementById("august_200").value)
+    var august_150_2 = Number(document.getElementById("august_150_2").value)
+    var august_150_1 = Number(document.getElementById("august_150_1").value)
+    var august_125 = Number(document.getElementById("august_125").value)
+    var august_100 = Number(document.getElementById("august_100").value)
+    var august_mahala = Number(document.getElementById("august_mahala").value)
+    var august_hofesh = Number(document.getElementById("august_hofesh").value)
+    var august_shabat = Number(document.getElementById("august_shabat").value)
+
+
+    last_per_hour_august = (a/100*20*august_20)+(a/100*50*august_50)+(a/100*200*august_200)+(a/100*150*august_150_2)+(a/100*150*august_150_1)+(a/100*125*august_125)+(a*august_100)+(a*august_mahala)+(a*august_hofesh)+(a*august_shabat)
+    new_per_hour_august =  (b/100*20*august_20)+(b/100*50*august_50)+(b/100*200*august_200)+(b/100*150*august_150_2)+(b/100*150*august_150_1)+(b/100*125*august_125)+(b*august_100)+(b*august_mahala)+(b*august_hofesh)+(b*august_shabat)
+
+    last_per_hour_august = Math.round(parseFloat(last_per_hour_august)*100)/100  
+    new_per_hour_august = Math.round(parseFloat(new_per_hour_august)*100)/100  
+
+    var hoser_august =  new_per_hour_august - last_per_hour_august
+    hoser_august = Math.round(parseFloat(hoser_august)*100)/100 
+
+
+    document.getElementById('last_price_august').innerText = last_per_hour_august
+    document.getElementById('new_price_august').innerText = new_per_hour_august
+    document.getElementById('hoser_august').innerText = hoser_august
+
+    var last_per_hour_july = 0 
+    var new_per_hour_july = 0 
+    
+    var july_50 = Number(document.getElementById("july_50").value)
+    var july_20 = Number(document.getElementById("july_20").value)
+    var july_200 = Number(document.getElementById("july_200").value)
+    var july_150_2 = Number(document.getElementById("july_150_2").value)
+    var july_150_1 = Number(document.getElementById("july_150_1").value)
+    var july_125 = Number(document.getElementById("july_125").value)
+    var july_100 = Number(document.getElementById("july_100").value)
+    var july_mahala = Number(document.getElementById("july_mahala").value)
+    var july_hofesh = Number(document.getElementById("july_hofesh").value)
+    var july_shabat = Number(document.getElementById("july_shabat").value)
+    
+    
+    last_per_hour_july = (a/100*20*july_20)+(a/100*50*july_50)+(a/100*200*july_200)+(a/100*150*july_150_2)+(a/100*150*july_150_1)+(a/100*125*july_125)+(a*july_100)+(a*july_mahala)+(a*july_hofesh)+(a*july_shabat)
+    new_per_hour_july =  (b/100*20*july_20)+(b/100*50*july_50)+(b/100*200*july_200)+(b/100*150*july_150_2)+(b/100*150*july_150_1)+(b/100*125*july_125)+(b*july_100)+(b*july_mahala)+(b*july_hofesh)+(b*july_shabat)
+    
+    last_per_hour_july = Math.round(parseFloat(last_per_hour_july)*100)/100  
+    new_per_hour_july = Math.round(parseFloat(new_per_hour_july)*100)/100  
+    
+    var hoser_july =  new_per_hour_july - last_per_hour_july
+    hoser_july = Math.round(parseFloat(hoser_july)*100)/100 
+    
+
+    document.getElementById('last_price_july').innerText = last_per_hour_july
+    document.getElementById('new_price_july').innerText = new_per_hour_july
+    document.getElementById('hoser_july').innerText = hoser_july
+
+    var last_per_hour_june = 0 
+    var new_per_hour_june = 0 
+    
+    var june_50 = Number(document.getElementById("june_50").value)
+    var june_20 = Number(document.getElementById("june_20").value)
+    var june_200 = Number(document.getElementById("june_200").value)
+    var june_150_2 = Number(document.getElementById("june_150_2").value)
+    var june_150_1 = Number(document.getElementById("june_150_1").value)
+    var june_125 = Number(document.getElementById("june_125").value)
+    var june_100 = Number(document.getElementById("june_100").value)
+    var june_mahala = Number(document.getElementById("june_mahala").value)
+    var june_hofesh = Number(document.getElementById("june_hofesh").value)
+    var june_shabat = Number(document.getElementById("june_shabat").value)
+    
+    
+    last_per_hour_june = (a/100*20*june_20)+(a/100*50*june_50)+(a/100*200*june_200)+(a/100*150*june_150_2)+(a/100*150*june_150_1)+(a/100*125*june_125)+(a*june_100)+(a*june_mahala)+(a*june_hofesh)+(a*june_shabat)
+    new_per_hour_june =  (b/100*20*june_20)+(b/100*50*june_50)+(b/100*200*june_200)+(b/100*150*june_150_2)+(b/100*150*june_150_1)+(b/100*125*june_125)+(b*june_100)+(b*june_mahala)+(b*june_hofesh)+(b*june_shabat)
+    
+    last_per_hour_june = Math.round(parseFloat(last_per_hour_june)*100)/100  
+    new_per_hour_june = Math.round(parseFloat(new_per_hour_june)*100)/100  
+    
+    var hoser_june =  new_per_hour_june - last_per_hour_june
+    hoser_june = Math.round(parseFloat(hoser_june)*100)/100 
+    
+
+    document.getElementById('last_price_june').innerText = last_per_hour_june
+    document.getElementById('new_price_june').innerText = new_per_hour_june
+    document.getElementById('hoser_june').innerText = hoser_june
+
     var last_per_hour_may = 0 
     var new_per_hour_may = 0 
     
@@ -196,13 +313,13 @@ function myFunction(){
 
   
 
-    var hos_all = hoser_may + hoser_april + hoser_march + hoser_feb +  hoser_jen
+    var hos_all = hoser_may + hoser_april + hoser_march + hoser_feb + hoser_jen + hoser_june + hoser_july + hoser_august + hoser_september
     hos_all = Math.round(parseFloat(hos_all)*100)/100 
 
-    var l_per_hour_all = last_per_hour_feb + last_per_hour_march + last_per_hour_april + last_per_hour_may + last_per_hour_jen
+    var l_per_hour_all = last_per_hour_feb + last_per_hour_march + last_per_hour_april + last_per_hour_may + last_per_hour_jen + last_per_hour_june+last_per_hour_july+last_per_hour_august+last_per_hour_september
     l_per_hour_all = Math.round(parseFloat(l_per_hour_all)*100)/100
 
-    var n_per_hour_all = new_per_hour_feb + new_per_hour_march + new_per_hour_april + new_per_hour_may +new_per_hour_jen
+    var n_per_hour_all = new_per_hour_feb + new_per_hour_march + new_per_hour_april + new_per_hour_may +new_per_hour_jen + new_per_hour_june +new_per_hour_july + new_per_hour_august +new_per_hour_september   
     n_per_hour_all = Math.round(parseFloat(n_per_hour_all)*100)/100
 
     document.getElementById('new_price_all').innerText = n_per_hour_all
