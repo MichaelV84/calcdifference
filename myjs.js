@@ -43,6 +43,116 @@ select1.addEventListener('change',function(){
 
 function myFunction(){
 
+    var last_per_hour_december = 0;
+var new_per_hour_december = 0;
+
+var december_50 = Number(document.getElementById("december_50").value);
+var december_20 = Number(document.getElementById("december_20").value);
+var december_200 = Number(document.getElementById("december_200").value);
+var december_150_2 = Number(document.getElementById("december_150_2").value);
+var december_150_1 = Number(document.getElementById("december_150_1").value);
+var december_125 = Number(document.getElementById("december_125").value);
+var december_100 = Number(document.getElementById("december_100").value);
+var december_mahala = Number(document.getElementById("december_mahala").value);
+var december_hofesh = Number(document.getElementById("december_hofesh").value);
+var december_shabat = Number(document.getElementById("december_shabat").value);
+
+last_per_hour_december =
+  (a / 100) * 20 * december_20 +
+  (a / 100) * 50 * december_50 +
+  (a / 100) * 200 * december_200 +
+  (a / 100) * 150 * december_150_2 +
+  (a / 100) * 150 * december_150_1 +
+  (a / 100) * 125 * december_125 +
+  a * december_100 +
+  a * december_mahala +
+  a * december_hofesh +
+  a * december_shabat;
+
+new_per_hour_december =
+  (b / 100) * 20 * december_20 +
+  (b / 100) * 50 * december_50 +
+  (b / 100) * 200 * december_200 +
+  (b / 100) * 150 * december_150_2 +
+  (b / 100) * 150 * december_150_1 +
+  (b / 100) * 125 * december_125 +
+  b * december_100 +
+  b * december_mahala +
+  b * december_hofesh +
+  b * december_shabat;
+
+last_per_hour_december = Math.round(parseFloat(last_per_hour_december) * 100) / 100;
+new_per_hour_december = Math.round(parseFloat(new_per_hour_december) * 100) / 100;
+
+var hoser_december = new_per_hour_december - last_per_hour_december;
+hoser_december = Math.round(parseFloat(hoser_december) * 100) / 100;
+
+document.getElementById("last_price_december").innerText = last_per_hour_december;
+document.getElementById("new_price_december").innerText = new_per_hour_december;
+document.getElementById("hoser_december").innerText = hoser_december;
+   
+
+    
+   
+
+    var last_per_hour_november = 0
+    var new_per_hour_november = 0
+
+    var november_50 = Number(document.getElementById("november_50").value)
+    var november_20 = Number(document.getElementById("november_20").value)
+    var november_200 = Number(document.getElementById("november_200").value)
+    var november_150_2 = Number(document.getElementById("november_150_2").value)
+    var november_150_1 = Number(document.getElementById("november_150_1").value)
+    var november_125 = Number(document.getElementById("november_125").value)
+    var november_100 = Number(document.getElementById("november_100").value)
+    var november_mahala = Number(document.getElementById("november_mahala").value)
+    var november_hofesh = Number(document.getElementById("november_hofesh").value)
+    var november_shabat = Number(document.getElementById("november_shabat").value)
+
+
+    last_per_hour_november = (a/100*20*november_20)+(a/100*50*november_50)+(a/100*200*november_200)+(a/100*150*november_150_2)+(a/100*150*november_150_1)+(a/100*125*november_125)+(a*november_100)+(a*november_mahala)+(a*november_hofesh)+(a*november_shabat)
+    new_per_hour_november =  (b/100*20*november_20)+(b/100*50*november_50)+(b/100*200*november_200)+(b/100*150*november_150_2)+(b/100*150*november_150_1)+(b/100*125*november_125)+(b*november_100)+(b*november_mahala)+(b*november_hofesh)+(b*november_shabat)
+
+    last_per_hour_november = Math.round(parseFloat(last_per_hour_november)*100)/100
+    new_per_hour_november = Math.round(parseFloat(new_per_hour_november)*100)/100
+
+    var hoser_november =  new_per_hour_november - last_per_hour_november
+    hoser_november = Math.round(parseFloat(hoser_november)*100)/100
+
+
+            document.getElementById('last_price_november').innerText = last_per_hour_november
+    document.getElementById('new_price_november').innerText = new_per_hour_november
+    document.getElementById('hoser_november').innerText = hoser_november
+
+    var last_per_hour_october = 0
+    var new_per_hour_october = 0
+
+    var october_50 = Number(document.getElementById("october_50").value)
+    var october_20 = Number(document.getElementById("october_20").value)
+    var october_200 = Number(document.getElementById("october_200").value)
+    var october_150_2 = Number(document.getElementById("october_150_2").value)
+    var october_150_1 = Number(document.getElementById("october_150_1").value)
+    var october_125 = Number(document.getElementById("october_125").value)
+    var october_100 = Number(document.getElementById("october_100").value)
+    var october_mahala = Number(document.getElementById("october_mahala").value)
+    var october_hofesh = Number(document.getElementById("october_hofesh").value)
+    var october_shabat = Number(document.getElementById("october_shabat").value)
+
+
+    last_per_hour_october = (a/100*20*october_20)+(a/100*50*october_50)+(a/100*200*october_200)+(a/100*150*october_150_2)+(a/100*150*october_150_1)+(a/100*125*october_125)+(a*october_100)+(a*october_mahala)+(a*october_hofesh)+(a*october_shabat)
+    new_per_hour_october =  (b/100*20*october_20)+(b/100*50*october_50)+(b/100*200*october_200)+(b/100*150*october_150_2)+(b/100*150*october_150_1)+(b/100*125*october_125)+(b*october_100)+(b*october_mahala)+(b*october_hofesh)+(b*october_shabat)
+
+    last_per_hour_october = Math.round(parseFloat(last_per_hour_october)*100)/100
+    new_per_hour_october = Math.round(parseFloat(new_per_hour_october)*100)/100
+
+    var hoser_october =  new_per_hour_october - last_per_hour_october
+    hoser_october = Math.round(parseFloat(hoser_october)*100)/100
+
+
+            document.getElementById('last_price_october').innerText = last_per_hour_october
+    document.getElementById('new_price_october').innerText = new_per_hour_october
+    document.getElementById('hoser_october').innerText = hoser_october
+
     var last_per_hour_september = 0
     var new_per_hour_september = 0
 
@@ -312,20 +422,19 @@ function myFunction(){
 
 
   
+    var hos_all = hoser_may + hoser_april + hoser_march + hoser_feb + hoser_jen + hoser_june + hoser_july + hoser_august + hoser_september+hoser_october+hoser_november+hoser_december
+    hos_all = Math.round(parseFloat(hos_all)*100)/100
 
-    var hos_all = hoser_may + hoser_april + hoser_march + hoser_feb + hoser_jen + hoser_june + hoser_july + hoser_august + hoser_september
-    hos_all = Math.round(parseFloat(hos_all)*100)/100 
-
-    var l_per_hour_all = last_per_hour_feb + last_per_hour_march + last_per_hour_april + last_per_hour_may + last_per_hour_jen + last_per_hour_june+last_per_hour_july+last_per_hour_august+last_per_hour_september
+    var l_per_hour_all = last_per_hour_feb + last_per_hour_march + last_per_hour_april + last_per_hour_may + last_per_hour_jen + last_per_hour_june+last_per_hour_july+last_per_hour_august+last_per_hour_september+last_per_hour_october+last_per_hour_november+last_per_hour_december
     l_per_hour_all = Math.round(parseFloat(l_per_hour_all)*100)/100
 
-    var n_per_hour_all = new_per_hour_feb + new_per_hour_march + new_per_hour_april + new_per_hour_may +new_per_hour_jen + new_per_hour_june +new_per_hour_july + new_per_hour_august +new_per_hour_september   
+    var n_per_hour_all = new_per_hour_feb + new_per_hour_march + new_per_hour_april + new_per_hour_may +new_per_hour_jen + new_per_hour_june +new_per_hour_july + new_per_hour_august +new_per_hour_september  +new_per_hour_october+new_per_hour_november+ new_per_hour_december
     n_per_hour_all = Math.round(parseFloat(n_per_hour_all)*100)/100
 
-    document.getElementById('new_price_all').innerText = n_per_hour_all
+            document.getElementById('new_price_all').innerText = n_per_hour_all
     document.getElementById('last_price_all').innerText = l_per_hour_all
     document.getElementById('hoser_all').innerText = hos_all
-    hos_all = hos_all+""
+            hos_all = hos_all+""
     if (hos_all == "NaN"){
         alert("You must write only numbers and \".\" no \",\" whith numbers. For example : \"4.5\" no \"4,5")
     }
@@ -333,7 +442,20 @@ function myFunction(){
 
 
 
+const timeInput1 = document.getElementById('timeInput1');
 
+timeInput1.addEventListener('change', (event) => {
+    const selectedTime1 = event.target.value;
+    console.log('Выбранное время:', selectedTime1);
+  });
+
+
+  const timeInput2 = document.getElementById('timeInput2');
+
+  timeInput2.addEventListener('change', (event) => {
+      const selectedTime2 = event.target.value;
+      console.log('Выбранное время:', selectedTime2);
+    });
 
 
 
