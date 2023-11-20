@@ -56,6 +56,45 @@
                   <th>חופשה</th>
                 </tr>
                 <tr>
+                    <td>דצמבר</td>
+                    <td><input id="december_shabat" type="number" onchange="myFunction()"></td>
+                    <td><input id="december_50" type="number" onchange="myFunction()"></td>
+                    <td><input id="december_20" type="number" onchange="myFunction()"></td>
+                    <td><input id="december_200" type="number" onchange="myFunction()"></td>
+                    <td><input id="december_150_2" type="number" onchange="myFunction()"></td>
+                    <td><input id="december_150_1" type="number" onchange="myFunction()"></td>
+                    <td><input id="december_125" type="number" onchange="myFunction()"></td>
+                    <td><input id="december_100" type="number" onchange="myFunction()"></td>
+                    <td><input id="december_mahala" type="number" onchange="myFunction()"></td>
+                    <td><input id="december_hofesh" type="number" onchange="myFunction()"></td>
+                </tr>
+                <tr>
+                    <td>נובמבר</td>
+                    <td><input id="november_shabat" type="number" onchange="myFunction()"></td>
+                    <td><input id="november_50"  type="number" onchange="myFunction()"></td>
+                    <td><input id="november_20" type="number" onchange="myFunction()"></td>
+                    <td><input id="november_200" type="number" onchange="myFunction()"></td>
+                    <td><input id="november_150_2" type="number" onchange="myFunction()"></td>
+                    <td><input id="november_150_1" type="number" onchange="myFunction()"></td>
+                    <td><input id="november_125" type="number" onchange="myFunction()"></td>
+                    <td><input id="november_100" type="number" onchange="myFunction()"></td>
+                    <td><input id="november_mahala" type="number" onchange="myFunction()"></td>
+                    <td><input id="november_hofesh" type="number" onchange="myFunction()"></td>
+                <tr>
+                <tr>
+                    <td>אוקטובר</td>
+                    <td><input id="october_shabat" type="number" onchange="myFunction()"></td>
+                    <td><input id="october_50"  type="number" onchange="myFunction()"></td>
+                    <td><input id="october_20" type="number" onchange="myFunction()"></td>
+                    <td><input id="october_200" type="number" onchange="myFunction()"></td>
+                    <td><input id="october_150_2" type="number" onchange="myFunction()"></td>
+                    <td><input id="october_150_1" type="number" onchange="myFunction()"></td>
+                    <td><input id="october_125" type="number" onchange="myFunction()"></td>
+                    <td><input id="october_100" type="number" onchange="myFunction()"></td>
+                    <td><input id="october_mahala" type="number" onchange="myFunction()"></td>
+                    <td><input id="october_hofesh" type="number" onchange="myFunction()"></td>
+                <tr>
+                <tr>
                     <td>ספטמבר</td>
                     <td><input id="september_shabat" type="number" onchange="myFunction()"></td>
                     <td><input id="september_50"  type="number" onchange="myFunction()"></td>
@@ -67,7 +106,7 @@
                     <td><input id="september_100" type="number" onchange="myFunction()"></td>
                     <td><input id="september_mahala" type="number" onchange="myFunction()"></td>
                     <td><input id="september_hofesh" type="number" onchange="myFunction()"></td>
-                  </tr>
+                </tr>
                 <tr>
                     <td>אוגוסט</td>
                     <td><input id="august_shabat" type="number" onchange="myFunction()"></td>
@@ -93,7 +132,7 @@
                     <td><input id="july_100" type="number" onchange="myFunction()"></td>
                     <td><input id="july_mahala" type="number" onchange="myFunction()"></td>
                     <td><input id="july_hofesh" type="number" onchange="myFunction()"></td>
-                  </tr>
+                </tr>
                 <tr>
                     <td>יוני</td> 
                     <td><input id="june_shabat" type="number" onchange="myFunction()"></td>
@@ -106,7 +145,7 @@
                     <td><input id="june_100" type="number" onchange="myFunction()"></td>
                     <td><input id="june_mahala" type="number" onchange="myFunction()"></td>
                     <td><input id="june_hofesh" type="number" onchange="myFunction()"></td>
-                  </tr>
+                </tr>
                 <tr>
                   <td>מאי</td> 
                   <td><input id="may_shabat" type="number" onchange="myFunction()"></td>
@@ -144,7 +183,7 @@
                     <td><input id="march_150_1" type="number" onchange="myFunction()"></td>
                     <td><input id="march_125" type="number" onchange="myFunction()"></td>
                     <td><input id="march_100" type="number" onchange="myFunction()"></td>
-                    <td><input id="march_mahala" type="number" onchange="myFunction()""></td>
+                    <td><input id="march_mahala" type="number" onchange="myFunction()"></td>
                     <td><input id="march_hofesh" type="number" onchange="myFunction()"></td>
                   </tr>
                   <tr>
@@ -188,6 +227,24 @@
                     <th>על פי שכר קודם</th>
                     <th>על פי שכר חדש</th>
                     <th>הפרש</th>
+                </tr>
+                <tr>
+                    <td >דצמבר</td> 
+                    <td id="last_price_december"></td> 
+                    <td id="new_price_december"></td> 
+                    <td id="hoser_december"></td> 
+                </tr>
+                <tr>
+                    <td >נובמבר</td> 
+                    <td id="last_price_november"></td> 
+                    <td id="new_price_november"></td> 
+                    <td id="hoser_november"></td> 
+                </tr>
+                <tr>
+                    <td >אוקטובר</td> 
+                    <td id="last_price_october"></td> 
+                    <td id="new_price_october"></td> 
+                    <td id="hoser_october"></td> 
                 </tr>
                 <tr>
                     <td >ספטמבר</td> 
@@ -251,14 +308,9 @@
                 </tr>
              </table>
         </div>
-        
-        
-       
-      
+
     </div>
-    
-    
-    
+
 </body>
 <script src="myjs.js"></script>
 </html>
