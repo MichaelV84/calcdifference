@@ -2,33 +2,33 @@
 
 const select1 = document.querySelector('.select-1');
 // document.getElementById('past_per_hour_div').textContent = 50.5
-document.getElementById('new_per_our_div').textContent = 51.99
-var a = 50.5
-var b = 51.99
+document.getElementById('new_per_our_div').textContent = 54.59
+var a = 54.59
+var b = 54.59
 select1.addEventListener('change',function(){
-    if (this.value == "50.5"){
+    if (this.value == "54.59"){
         // a = 50.5
-        b = 51.99
+        b = 54.59
     }
-    if (this.value == "49"){
+    if (this.value == "52.49"){
         // a = 49
-        b = 50.45
+        b = 52.49
     }
-    if (this.value == "47.5"){
+    if (this.value == "51.35"){
         // a = 47.50
-        b = 48.91
+        b = 51.35
     }
-    if (this.value == "46.22"){
+    if (this.value == "49.97"){
         // a = 46.22
-        b = 47.59
+        b = 49.97
     }
-    if (this.value == "43.19"){
+    if (this.value == "46.69"){
         // a = 43.19
-        b = 44.47
+        b = 46.69
     }
-    if (this.value == "42.31"){
+    if (this.value == "45.74"){
         // a = 42.31
-        b = 43.56
+        b = 45.74
     }
     if (this.value == ""){
         a = 0
@@ -124,7 +124,7 @@ timeInput1.addEventListener('change', (event) => {
       console.log('Выбранное время:', selectedTime2);
     });
 
-
+    select1.dispatchEvent(new Event('change'));
 
 
 
