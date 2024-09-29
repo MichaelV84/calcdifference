@@ -10,9 +10,9 @@ select1.addEventListener('change',function(){
         // a = 50.5
         b = 54.59
     }
-    if (this.value == "52.49"){
+    if (this.value == "52.97"){
         // a = 49
-        b = 52.49
+        b = 52.97
     }
     if (this.value == "51.35"){
         // a = 47.50
