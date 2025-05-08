@@ -2,32 +2,32 @@
 
 const select1 = document.querySelector('.select-1');
 // document.getElementById('past_per_hour_div').textContent = 50.5
-document.getElementById('new_per_our_div').textContent = 54.59
-var a = 54.59
-var b = 54.59
+document.getElementById('new_per_our_div').textContent = 56.36
+var a = 56.36
+var b = 56.36
 select1.addEventListener('change',function(){
-    if (this.value == "54.59"){
+    if (this.value == "56.36"){
         // a = 50.5
-        b = 54.59
+        b = 56.36
     }
-    if (this.value == "52.97"){
+    if (this.value == "54.69"){
         // a = 49
-        b = 52.97
+        b = 54.69
     }
-    if (this.value == "51.35"){
+    if (this.value == "53"){
         // a = 47.50
-        b = 51.35
+        b = 53
     }
-    if (this.value == "49.97"){
+    if (this.value == "51.59"){
         // a = 46.22
-        b = 49.97
+        b = 51.59
     }
-    if (this.value == "46.69"){
+    if (this.value == "48.2"){
         // a = 43.19
-        b = 46.69
+        b = 48.2
     }
-    if (this.value == "45.74"){
-        // a = 42.31
+    if (this.value == "47.22"){
+        // a = 47.22
         b = 45.74
     }
     if (this.value == ""){
