@@ -28,7 +28,7 @@ select1.addEventListener('change',function(){
     }
     if (this.value == "47.22"){
         // a = 47.22
-        b = 45.74
+        b = 47.22
     }
     if (this.value == ""){
         a = 0
